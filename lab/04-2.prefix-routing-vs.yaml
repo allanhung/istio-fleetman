@@ -1,0 +1,43 @@
+kind: VirtualService
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: fleetman-webapp
+  namespace: default
+spec:
+  hosts:      # which incoming host are we applying the proxy rules to???
+    - "*" # Copy the value in the gateway hosts - usually a Domain Name
+  gateways:
+    - ingress-gateway-configuration
+  http:
+  - match:     # This is a LIST
+    - uri: # IF
+        prefix: "/experimental"
+    - uri: # OR
+        prefix: "/canary"
+
+    route: # THEN
+    - destination:
+        host: fleetman-webapp
+        subset: experimental
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: fleetman-webapp
+        subset: original
+---
+kind: DestinationRule
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: fleetman-webapp
+  namespace: default
+spec:
+  host: fleetman-webapp
+  subsets:
+    - labels:
+        version: original
+      name: original
+    - labels:
+        version: experimental
+      name: experimental

@@ -1,0 +1,45 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: ingress-gateway-configuration
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http-webapp
+      protocol: HTTP
+    hosts:
+    - "ig.k8s.ali-netbase.com"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: fleetman-webapp
+  namespace: istio-system
+spec:
+  hosts:
+  - "ig.k8s.ali-netbase.com"
+  gateways:
+  - ingress-gateway-configuration
+  http:
+  - match:
+    - port: 80
+    route:
+    - destination:
+        host: fleetman-webapp.default.svc.cluster.local
+        port:
+          number: 80
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: fleetman-webapp
+  namespace: istio-system
+spec:
+  host: fleetman-webapp.default.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: DISABLE

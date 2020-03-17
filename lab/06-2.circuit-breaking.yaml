@@ -1,0 +1,13 @@
+kind: DestinationRule       # Defining which pods should be part of each subset
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: circuit-breaker-for-fleetman-staff-service
+  namespace: default
+spec:
+  host: "fleetman-staff-service.default.svc.cluster.local"          # This is the name of the k8s service that we're configuring
+  trafficPolicy:
+    outlierDetection: # Circuit Breakers HAVE TO BE SWITCHED ON
+      maxEjectionPercent: 100
+      consecutiveErrors: 2 # Number of errors (502, 503, 504) before circuit breaker is triggered
+      interval: 5s
+      baseEjectionTime: 30s
