@@ -1,0 +1,71 @@
+CONNECTED(00000005)
+---
+Certificate chain
+ 0 s:
+   i:O = cluster.local
+-----BEGIN CERTIFICATE-----
+MIIDHjCCAgagAwIBAgIRANpSyvNSLj5+la+0CLw67F8wDQYJKoZIhvcNAQELBQAw
+GDEWMBQGA1UEChMNY2x1c3Rlci5sb2NhbDAeFw0yMDA0MjIxNTMyNThaFw0yMDA0
+MjMxNTMyNThaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxV4O1
+dcygtCYKu8woQd7dFHvdsS7/E+TMV8C0l85JCjHxAB5R7Hnh6I37Uw/i8dBDTmez
+cuos6IwPAint2+XCbise3qVUi8bNs3tWZFM5gnOtDmZnaTMDXcCfGoEtIKEKQ/Bx
+t2umLW+XX98CViMPwYt1zcQ3tmSz9Q9NwRXSC5+Se3HoXa9m7QNIXf2pscsCN5Qt
+IGdLJFC8J+dpOUIY6NPimqircPHN0KHvoqdqm9oF6YUVEhQ1TeXuxiT4GRV2R2UC
+jefzLNmGGxggo41aZOcrW3roYKTTs6rHwXuw3EiH5g8AnSr2U1zBMI30mSQqEN3A
+/RD/4PYKotJHRuMfAgMBAAGjezB5MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU
+BggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADA6BgNVHREBAf8EMDAu
+hixzcGlmZmU6Ly9jbHVzdGVyLmxvY2FsL25zL2RlZmF1bHQvc2EvZGVmYXVsdDAN
+BgkqhkiG9w0BAQsFAAOCAQEApn8N97mT43ND5+16CusjBbt2Fzjzd/dFSFKzsY8z
+eSv2Fl9Fhv356l7VIOIM3cWVlcf9VVCfgcmobU99LzFJU850Av+hoXgwyYN7IzQw
+eiR8AfZqdO1ICa5IOuscX3a8aOsQqNuiPLUaVXpwzFjJdOgR69WUfj0M9nP6fUYW
+42ozVl3LY1mNo/WxS2YkQJkwNRfltrC90YBsRCbN/BAv4h6UeBSTgJO6hE1tAm/B
+ebfXV0PQ+NFFEw8h5JELUkKkQkMSlbfsqouzROCJYURgdhiru4DlqC40yGvjuooK
+HPdOxjnFXKSxZ2n+QmkR7FbFa+QMHDrUhgs6lf6zzrxs4A==
+-----END CERTIFICATE-----
+ 1 s:O = cluster.local
+   i:O = cluster.local
+-----BEGIN CERTIFICATE-----
+MIIC3jCCAcagAwIBAgIRAJlmtUG0Nm0BRE8EKrQIlDcwDQYJKoZIhvcNAQELBQAw
+GDEWMBQGA1UEChMNY2x1c3Rlci5sb2NhbDAeFw0yMDA0MjIwMzMwMDBaFw0zMDA0
+MjAwMzMwMDBaMBgxFjAUBgNVBAoTDWNsdXN0ZXIubG9jYWwwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDPJTnw3NjKGIubpA76cg45a8TCALQskCIDJypB
+jpKkZxTbj4uD9XkSUVpy82Okp9G4615HDTFE1y08E5JGkyRe8UsuCoXLZhaDVJdI
+CejphRkCJtqFXnGK9Bdt1WxkI/Pt4eHE8UzC5cbdGPyrOFqb+Uh5OqHX7evFb8sO
+OzXZfOEbBDuCLsTteGZ2X6QRHqcxzHcEE/1DPHzwufj4obo6VWVF5d9rQtTYpfA/
+1FoqOyoRWj64XeBVNDko3gwnqinGUs4i3gBOW51Jvbh5fxdXhbicrXfLqIBafw4b
+Z9F5IH1Nu6WVSbQfUD7FZlYRYWJUUcxd+k/QV7AoYNohLogBAgMBAAGjIzAhMA4G
+A1UdDwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IB
+AQAU7e7ICvrPjiRYWDgCtI76ywFcoUg+V+bp9pb2uE2OgvhwhVyrk3ahDCQp03s1
+VO4MESbkEr6VJf/1/L/FDJYfvF07L7nSg0ygbxgpzVS6o1iL+VWIer6xjCUh7kNH
+t+7+odre/2CYKwdiBHdsH1KA/jvkggvGxkzlByGYZz7D0bcuWLA+lerq92cRmgnV
+Ys/kDMC7LUwQuzHaUEjBuQi/FcKlAgsmQWhDIHg7AYU50jD1u9aT1CQQp/Qbyc4w
++eccCEgOlM7XRJqsOGgLHqxtva6vCBcUzJDxuhBqyyuJt8UvmMRcBc/gjmwi33hX
+EXJszz3nhWbU6SLaLI/F0Jvr
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=
+
+issuer=O = cluster.local
+
+---
+Acceptable client certificate CA names
+O = cluster.local
+Requested Signature Algorithms: ECDSA+SHA256:RSA-PSS+SHA256:RSA+SHA256:ECDSA+SHA384:RSA-PSS+SHA384:RSA+SHA384:RSA-PSS+SHA512:RSA+SHA512:RSA+SHA1
+Shared Requested Signature Algorithms: ECDSA+SHA256:RSA-PSS+SHA256:RSA+SHA256:ECDSA+SHA384:RSA-PSS+SHA384:RSA+SHA384:RSA-PSS+SHA512:RSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2100 bytes and written 439 bytes
+Verification error: self signed certificate in certificate chain
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 19 (self signed certificate in certificate chain)
+---

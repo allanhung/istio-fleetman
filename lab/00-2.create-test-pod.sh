@@ -1,1 +1,1 @@
-kubectl run curl --restart=Never --image=busybox -- tail -f /dev/null
+kubectl run curl --wait --restart=Never --image=centos -- tail -f /dev/null

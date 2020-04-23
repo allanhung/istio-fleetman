@@ -26,5 +26,5 @@ spec:
         httpHeaderName: "y-myval"
   subsets:
     - labels:   # SELECTOR.
-        version: risky # find pods with label "safe"
+        app: fleetman-staff-service
       name: all-staff-service-pods

@@ -14,7 +14,7 @@ spec:
       fault:
         delay:
           percentage:
-            value: 100.0
+            value: 70
           fixedDelay: 3s # BE CAREFUL WITH INDENTATION!
       route:
         - destination:

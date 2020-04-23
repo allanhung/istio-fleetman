@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: webapp
+      app: fleetman-webapp
   replicas: 1
   template: # template for the pods
     metadata:
       labels:
-        app: webapp
+        app: fleetman-webapp
         version: original
     spec:
       containers:
@@ -28,12 +28,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: webapp
+      app: fleetman-webapp
   replicas: 1
   template: # template for the pods
     metadata:
       labels:
-        app: webapp
+        app: fleetman-webapp
         version: experimental
     spec:
       containers:

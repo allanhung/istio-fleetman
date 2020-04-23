@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: staff-service
+      app: fleetman-staff-service
   replicas: 1
   template: # template for the pods
     metadata:
       labels:
-        app: staff-service
+        app: fleetman-staff-service
         version: safe
     spec:
       containers:
@@ -30,12 +30,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: staff-service
+      app: fleetman-staff-service
   replicas: 1
   template: # template for the pods
     metadata:
       labels:
-        app: staff-service
+        app: fleetman-staff-service
         version: risky
     spec:
       containers:

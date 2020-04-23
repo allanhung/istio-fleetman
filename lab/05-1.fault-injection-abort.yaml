@@ -14,7 +14,7 @@ spec:
       fault:
         abort:
           percentage:
-            value: 100.0
+            value: 70.0
           httpStatus: 418 # BE CAREFUL WITH INDENTATION!
       route:
         - destination:

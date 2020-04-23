@@ -1,1 +1,1 @@
-time kubectl exec curl -c curl -- wget -S --header="x-my-header: canary" -qO - http://fleetman-webapp/api/vehicles/driver/City#20Truck
+kubectl exec curl -c curl -- sh -c 'for i in $(seq 1 5); do echo -n "$i - "; time curl -H "x-my-header: canary" -s http://fleetman-webapp/api/vehicles/driver/City#20Truck; done'
