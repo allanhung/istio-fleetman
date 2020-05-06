@@ -7,11 +7,7 @@ spec:
   hosts:
     - fleetman-staff-service
   http:
-    - match:
-        - headers:
-            x-my-header:
-              exact: canary
-      fault:
+    - fault:
         abort:
           percentage:
             value: 70.0

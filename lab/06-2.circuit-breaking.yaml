@@ -8,6 +8,6 @@ spec:
   trafficPolicy:
     outlierDetection: # Circuit Breakers HAVE TO BE SWITCHED ON
       maxEjectionPercent: 100
-      consecutiveErrors: 2 # Number of errors (502, 503, 504) before circuit breaker is triggered
-      interval: 5s
+      consecutiveErrors: 3 # Number of errors (502, 503, 504) before circuit breaker is triggered
+      interval: 10s
       baseEjectionTime: 30s
